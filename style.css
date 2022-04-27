@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&display=swap');
+
+/* 
+# font-family: 'Merriweather Sans', sans-serif;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --body-bg-color: #22212C;
+  --text-color: #837E9F;
+  --bg-cards: #302F3D;
+  --bg-techs: #CB92B1;
+}
+
+body {
+  background-color: var(--body-bg-color);
+  font-family: 'Merriweather Sans', sans-serif;
+  color: var(--text-color);
+}
+
+main {
+  display: flex;
+}
+
+section {
+  background-color: var(--bg-cards);
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.container {
+  width: 348px;
+  margin-left: 10px;
+  padding: 20px;
+}
+
+.container ul {
+  display: flex;
+}
+
+.container ul li {
+  margin: 20px 0;
+}
+
+/* ############ PROFILE CARD  ############*/
+
+#profile {
+  height: 292px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+}
+
+.photo-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 128px;
+  height: 128px;
+  overflow: hidden;
+
+  border-radius: 50%;
+  border: 2px solid #00df00;
+}
+
+.photo-profile img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.resume {
+  margin: 20px 0;
+}
+
+/* ############ INFORMATION CARD  ############*/
+.informations-container {
+  display: flex;
+  flex-direction: column;
+}
+.informations-container ul {
+  flex-direction: column;
+}
+
+.informations-container ul li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 15px;
+  margin-top: 20px;
+
+  color: var(--text-color);
+}
+
+.informations-container ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+/* ############ TECHNOLOGY CARD  ############*/
+
+.technologys-container ul {
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  margin: 10px;
+  list-style: none;
+}
+
+.technologys-container ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+
+  font-size: .65em;
+  margin: 10px 5px;
+  width: 80px;
+  height: 30px;
+  background-color: var(--bg-techs);
+  color: black;
+}
+
+/* ############ EXPERIENCE CARD  ############*/
+
+.experience-container ul {
+  margin: 0 20px;
+  flex-direction: column;
+}
+
+/* ############ EDUCATION CARD  ############*/
+
+
+
+/* ############ PROJECTS CARD  ############*/
+.article-feed {
+  width: 100%;
+  margin-right: 10px;
+
+  overflow-x: hidden;
+}
+
+.projects-container {
+
+  width: 92%;
+}
+
+.projects-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ############ POSTS CARD  ############*/
+
+/* ############ MEDIA QUERIES - RESPONSIVE  ############*/
