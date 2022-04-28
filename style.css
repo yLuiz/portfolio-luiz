@@ -36,6 +36,8 @@ section {
   width: 348px;
   margin-left: 10px;
   padding: 20px;
+  box-sizing: border-box;
+
 }
 
 .container ul {
@@ -150,21 +152,31 @@ section {
 
 
 /* ############ PROJECTS CARD  ############*/
+
 .article-feed {
   width: 100%;
   margin-right: 10px;
 
   overflow-x: hidden;
+
+
+}
+
+#projects {
+  box-sizing: border-box;
 }
 
 .projects-container {
-
-  width: 92%;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  
 }
 
 .projects-title {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -182,3 +194,33 @@ section {
 /* ############ POSTS CARD  ############*/
 
 /* ############ MEDIA QUERIES - RESPONSIVE  ############*/
+@media (max-width: 950px) {
+  body {
+    justify-content: center;
+    align-items: center;
+  }
+
+  main {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+  }
+
+  .article-feed {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 460px) {
+  .container {
+    width: 100%;
+    padding: 20px;
+  }
+}
