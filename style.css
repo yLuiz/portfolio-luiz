@@ -106,7 +106,6 @@ section {
   gap: 15px;
   margin: 15px;
   margin-top: 20px;
-
   color: var(--text-color);
 }
 
@@ -222,5 +221,25 @@ section {
   .container {
     width: 100%;
     padding: 20px;
+  }
+}
+
+@media (max-width: 330px) {
+  .informations-container ul li {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--text-color);
+    min-width: 180px;
+    height: 80px;
+    border-radius: 10px;
+
+    box-sizing: border-box;
+    padding: 0 20px;
+  }
+
+  .informations-email {
+    font-size: .75em;
+    font-weight: bold;
   }
 }
