@@ -37,7 +37,6 @@ section {
   margin-left: 10px;
   padding: 20px;
   box-sizing: border-box;
-
 }
 
 .container ul {
@@ -78,12 +77,13 @@ section {
   overflow: hidden;
 
   border-radius: 50%;
-  border: 2px solid #00df00;
+  border: 1px solid #00df00;
 }
 
 .photo-profile img {
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
   object-fit: cover;
 }
 
@@ -110,8 +110,23 @@ section {
 }
 
 .informations-container ul li a {
+  position: relative;
   text-decoration: none;
   color: var(--text-color);
+}
+
+.informations-container ul li a::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: var(--text-color);
+  width: 0%;
+  height: 2px;
+  transition: .2s ease-in-out;
+}
+
+.informations-container ul li a:hover::after {
+  width: 100%;
 }
 
 /* ############ TECHNOLOGY CARD  ############*/
@@ -148,35 +163,57 @@ section {
 
 /* ############ EDUCATION CARD  ############*/
 
+.education-container ul{
+  flex-direction: column;
+  margin: 0 20px;
+}
 
+.education-item {
+  margin-top: 5px;
+}
+
+.education-item span {
+  font-size: 1.15em;
+  font-weight: bolder;
+}
 
 /* ############ PROJECTS CARD  ############*/
 
 .article-feed {
   width: 100%;
-  margin-right: 10px;
-
   overflow-x: hidden;
-
-
 }
 
 #projects {
   box-sizing: border-box;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
 }
 
-.projects-container {
+.projects-container, .posts-container {
   width: 100%;
   margin: 0;
   box-sizing: border-box;
-  
 }
 
-.projects-title {
+.projects-title, .posts-title {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  background-color: var(--bg-cards);
+  border-radius: 10px;
+  margin: 0px;
+  width: 100%;
+  min-height: 80px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.projects-title h2, .posts-title  h2{
+  font-size: 1.1em;
 }
 
 .projects-title a {
@@ -190,7 +227,39 @@ section {
   border-bottom: 1px solid var(--text-color);
 }
 
+.projects-items, .posts-items {
+  margin-top: 20px;
+  min-height: 160px;
+  border-radius: 10px;
+}
+
+.projects-items {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.p-item {
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  min-height: 120px;
+  background-color: var(--bg-cards);
+}
+
 /* ############ POSTS CARD  ############*/
+
+#posts {
+  box-sizing: border-box;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.posts-items {
+  background-color: var(--bg-cards);
+}
 
 /* ############ MEDIA QUERIES - RESPONSIVE  ############*/
 @media (max-width: 950px) {
@@ -209,11 +278,25 @@ section {
     display: flex;
     flex-direction: column;
     
+    padding: 0;
     width: 100%;
   }
 
   .article-feed {
     margin-right: 0px;
+  }
+}
+
+@media (max-width: 620px) {
+  .projects-items {
+    flex-wrap: wrap;
+  }
+
+  .p-item {
+    border-radius: 10px;
+    max-width: 100%;
+    min-height: 120px;
+    background-color: var(--bg-cards);
   }
 }
 
