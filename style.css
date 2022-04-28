@@ -7,6 +7,8 @@
 * {
   margin: 0;
   padding: 0;
+
+  box-sizing: border-box;
 }
 
 :root {
@@ -30,6 +32,10 @@ section {
   background-color: var(--bg-cards);
   border-radius: 10px;
   margin: 10px;
+}
+
+h2 {
+  font-size: 1.1em;
 }
 
 .container {
@@ -88,6 +94,9 @@ section {
 }
 
 .resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 20px 0;
 }
 
@@ -142,16 +151,23 @@ section {
 
 .technologys-container ul li {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
 
   font-size: .65em;
+  font-weight: bold;
   margin: 10px 5px;
   width: 80px;
-  height: 30px;
-  background-color: var(--bg-techs);
-  color: black;
+  height: 50px;
+  color: var(--text-color);
+}
+
+.technologys-container ul li img {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
 }
 
 /* ############ EXPERIENCE CARD  ############*/
@@ -282,6 +298,30 @@ section {
     width: 100%;
   }
 
+  .technologys-container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+  }
+
+  .technologys-container h2 {
+    align-self: flex-start;
+  }
+
+  .technologys-container ul{
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 450px;
+    margin: 0;
+  }
+
+  .technologys-container ul li {
+    width: 33%;
+    margin: 10px 0;
+
+  }
+
   .article-feed {
     margin-right: 0px;
   }
@@ -324,5 +364,9 @@ section {
   .informations-email {
     font-size: .75em;
     font-weight: bold;
+  }
+
+  .technologys-container ul li {
+    width: 50%;
   }
 }
