@@ -114,6 +114,7 @@ h2 {
   max-width: 310px;
   padding: 0 40px 40px;
   height: 100%;
+
 }
 
 .arrow-down {
@@ -151,6 +152,9 @@ h2 {
   font-size: 1.2em;
   transition: .5s ease-in-out;
   margin-top: 10px;
+
+  transition: .3s ease-in-out;
+  animation: float 2s ease-in-out infinite;
 }
 
 .arrow-down:hover .menu-content {
@@ -159,7 +163,9 @@ h2 {
 
 .arrow-down:hover .bi-chevron-down {
   transform: rotate(180deg);
+
   margin-top: 10px;
+  animation: rotatearrow .3s ease-in-out;
 }
 
 .resume {
@@ -169,12 +175,19 @@ h2 {
   margin: 20px 0 10px;
 }
 
-/* ############ INFORMATION CARD  ############*/
-.informations-container {
-  display: flex;
-  flex-direction: column;
+@keyframes rotatearrow {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
 }
-.informations-container ul {
+
+/* ############ INFORMATION CARD  ############*/
+.informations-container, .informations-container ul {
+  display: flex;
   flex-direction: column;
 }
 
@@ -220,6 +233,8 @@ h2 {
 
 .technologys-container ul li {
   display: flex;
+  position: relative;
+
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -231,12 +246,24 @@ h2 {
   width: 80px;
   height: 50px;
   color: var(--text-color);
+  animation: float 3s ease-in-out infinite;
 }
 
 .technologys-container ul li img {
+  position: relative;
   width: 25px;
   height: 25px;
   margin: 5px;
+  z-index: 1;
+}
+
+@keyframes float {
+  0%, 100%{
+    transform: translate(0px);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
 }
 
 /* ############ EXPERIENCE CARD  ############*/
