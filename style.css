@@ -338,11 +338,15 @@ h2 {
 .item-content{
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 10px;
+  min-height: 100%;
 }
 
 .project-description p {
-  font-size: .8em;  
+  font-size: .75em;
+  letter-spacing: 1px;
+  line-height: 25px;
 }
 
 .item-title {
@@ -387,7 +391,7 @@ h2 {
   font-size: .8em;
 }
 
-.avaliation-icons img {
+.avaliation-icons img, .project-description a img {
   width: 16px;
   height: 16px;
 }
