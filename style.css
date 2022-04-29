@@ -92,8 +92,9 @@ h2 {
   height: 128px;
   overflow: hidden;
 
+  border: 2px solid #3e971b;
   border-radius: 50%;
-  border: 1px solid #00df00;
+  
 }
 
 .photo-profile img {
@@ -327,7 +328,88 @@ h2 {
   width: 100%;
   max-width: 400px;
   min-height: 120px;
+  
+  padding: 1.2em 1.2em 0;
+
   background-color: var(--bg-cards);
+}
+
+.item-content{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.project-description {
+
+}
+
+.project-description p {
+  font-size: .8em;  
+}
+
+.item-title {
+  display: flex;
+  position: relative;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-color);
+
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+.item-title p {
+  position: relative;
+  color: var(--text-color);
+
+  gap: 15px;
+}
+
+.item-title p::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: var(--text-color);
+  width: 0%;
+  bottom: 0;
+  height: 2px;
+  transition: .2s ease-in-out;
+}
+
+.item-title p:hover::after {
+  width: 100%;
+}
+
+.avaliation-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+
+  font-size: .8em;
+}
+
+.avaliation-icons img {
+  width: 16px;
+  height: 16px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.circle-icon {
+  display: inline-block;
+  border: 2.5px solid #ccc;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+}
+
+.circle-icon.yellow {
+  background-color: yellow;
 }
 
 /* ############ POSTS CARD  ############*/
