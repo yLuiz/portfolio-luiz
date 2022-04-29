@@ -133,7 +133,7 @@ h2 {
   transition: .5s ease-in-out;
 }
 
-.menu-content a {
+.menu-dropdown .menu-content a {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -146,13 +146,13 @@ h2 {
   border-radius: 10px;
 }
 
-.arrow-down:hover .menu-content {
-  height: 50px;
-}
-
 .bi-caret-down {
   font-size: 1.2em;
   transition: .5s ease-in-out;
+}
+
+.arrow-down:hover .menu-content {
+  height: 50px;
 }
 
 .arrow-down:hover .bi-caret-down {
