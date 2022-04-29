@@ -147,16 +147,17 @@ h2 {
   border-radius: 10px;
 }
 
-.bi-caret-down {
+.bi-chevron-down {
   font-size: 1.2em;
   transition: .5s ease-in-out;
+  margin-top: 10px;
 }
 
 .arrow-down:hover .menu-content {
   height: 50px;
 }
 
-.arrow-down:hover .bi-caret-down {
+.arrow-down:hover .bi-chevron-down {
   transform: rotate(180deg);
   margin-top: 10px;
 }
@@ -339,9 +340,6 @@ h2 {
   flex-direction: column;
   gap: 10px;
 }
-.project-description {
-
-}
 
 .project-description p {
   font-size: .8em;  
@@ -410,6 +408,10 @@ h2 {
 
 .circle-icon.yellow {
   background-color: yellow;
+}
+
+.circle-icon.orange {
+  background-color: rgb(255, 115, 0);
 }
 
 /* ############ POSTS CARD  ############*/
