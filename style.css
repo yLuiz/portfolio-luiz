@@ -344,14 +344,14 @@ h2 {
 .projects-items {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 20px;
+  justify-content: center;
+  gap: 10px;
 }
 
 .p-item {
   border-radius: 10px;
-  width: 50%;
-  max-width: 400px;
+  min-width: calc(50% - 10px);
+  max-width: calc(50% - 10px);
   min-height: 120px;
   
   padding: 1.2em 1.2em 0;
@@ -457,6 +457,7 @@ h2 {
 }
 
 /* ############ MEDIA QUERIES - RESPONSIVE  ############*/
+
 @media (max-width: 950px) {
   body {
     justify-content: center;
