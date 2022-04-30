@@ -119,7 +119,7 @@ h2 {
 
 .arrow-down {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
 }
@@ -133,6 +133,10 @@ h2 {
   height: 0;
   overflow: hidden;
   transition: .5s ease-in-out;
+}
+
+.menu-dropdown {
+  margin-top: 10px;
 }
 
 .menu-dropdown .menu-content a {
@@ -154,18 +158,24 @@ h2 {
   margin-top: 10px;
 
   transition: all .3s ease-in-out;
-  animation: float 2s ease-in-out infinite;
 }
 
-.arrow-down:hover .menu-content {
+#btn-arrow {
+  display: none;
+}
+
+#btn-arrow:checked + label + .menu-content {
   height: 50px;
 }
 
-.arrow-down:hover .bi-chevron-down {
+#btn-arrow:checked + label {
   margin-top: 10px;
   transform: rotate(180deg);
   animation: rotatearrow .3s ease-in-out;
+}
 
+.arrow-icon {
+  animation: float 2s ease-in-out infinite;
 }
 
 .resume {
