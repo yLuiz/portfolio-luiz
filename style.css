@@ -176,6 +176,7 @@ h2 {
 
 .arrow-icon {
   animation: float 2s ease-in-out infinite;
+  cursor: pointer;
 }
 
 .resume {
