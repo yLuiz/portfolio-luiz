@@ -189,6 +189,7 @@ h2 {
 #btn-arrow:checked + label > i {
   margin-top: 10px;
   transform: rotate(180deg);
+  
 }
 
 .arrow-icon {
