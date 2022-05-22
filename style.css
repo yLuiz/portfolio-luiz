@@ -460,11 +460,15 @@ h2 {
 }
 
 .circle-icon.yellow {
-  background-color: yellow;
+  background-color: #ffff00;
 }
 
 .circle-icon.orange {
-  background-color: rgb(255, 115, 0);
+  background-color: #ff7300;
+}
+
+.circle-icon.blue {
+  background-color: #006aff;
 }
 
 /* ############ POSTS CARD  ############*/
