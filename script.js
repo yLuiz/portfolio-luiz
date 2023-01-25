@@ -4,15 +4,6 @@ const technologys_list = document.getElementById('technologys-list');
 
 const projects = [
   {
-    url: 'https://bshelf-angular.vercel.app/',
-    title: 'BShelf',
-    image: '',
-    description: 'Um sistema semelhante a uma lista de afazeres, com uma sutil diferença, é uma lista de livros que você pretende ler, está lendo ou leu. A aplicação foi desenvolvida utilizando Typescript, Node.js, Angular e consume uma API com base de dados no MongoDB Atlas, API feita por mim mesmo.',
-    colorClass: 'blue',
-    tecnology: 'Typescript'
-  },
-
-  {
     url: 'https://yluiz.github.io/prodmais-collaborators/',
     title: 'Prod+ Collaborators',
     image: '',
@@ -32,9 +23,9 @@ const projects = [
 
   {
     url: 'https://github.com/yLuiz/bshelf-angular',
-    title: 'API BShelf',
+    title: 'bshelf-angular',
     image: '',
-    description: 'API Restful completa com CRUD completo para cadastro de livros, utilizando Node.js, MongoDB e Postman para teste de requesição e resposta.',
+    description: 'Um sistema semelhante a uma lista de afazeres, com uma sutil diferença, é uma lista de livros que você pretende ler, está lendo ou leu. A aplicação foi desenvolvida utilizando Typescript, Node.js, Angular e consume uma API com base de dados no MongoDB Atlas, API feita por mim mesmo. Esta API foi feita utilizando Node.js, Express, MongoDB e Postman para teste de requesição e resposta.',
     colorClass: 'blue',
     tecnology: 'Typescript'
   },
@@ -59,7 +50,7 @@ const projects = [
 
   {
     url: 'https://github.com/yLuiz/ecoleta',
-    title: 'Ecoleta',
+    title: 'ecoleta',
     image: '',
     description: '',
     colorClass: 'blue',
@@ -88,20 +79,8 @@ const projects = [
 const experiencies = [
   {
     where: 'Rocketseat',
-    year: 2021,
-    name: 'NLW Heat [Trilha Origin]',
-    participation: 'Estudante'
-  },
-  {
-    where: 'Rocketseat',
-    year: 2022,
-    name: 'NLW Return [Trilha Impulse]',
-    participation: 'Estudante'
-  },
-  {
-    where: 'Alura',
-    year: 2022,
-    name: 'AluraCord',
+    year: 2023,
+    name: 'NLW Omnistack - Ecoleta',
     participation: 'Estudante'
   },
   {
@@ -109,6 +88,18 @@ const experiencies = [
     year: 2022,
     name: 'Desenvolvedor Fullstack',
     participation: 'Estágio'
+  },
+  {
+    where: 'Fametro',
+    year: 2022,
+    name: 'Prod+',
+    participation: 'Estudante'
+  },
+  {
+    where: 'Rocketseat',
+    year: 2022,
+    name: 'NLW Impulse - Widget Feedback',
+    participation: 'Estudante'
   },
 ];
 
