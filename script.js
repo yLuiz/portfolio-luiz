@@ -31,6 +31,15 @@ const projects = [
   },
 
   {
+    url: 'https://github.com/yLuiz/moments',
+    title: 'Momments',
+    image: '',
+    description: '',
+    colorClass: 'blue',
+    tecnology: 'Typescript',
+  },
+
+  {
     url: 'https://yluiz.github.io/nlw_card/',
     title: 'nlw-card',
     image: '',
