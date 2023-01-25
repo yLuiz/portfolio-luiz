@@ -17,8 +17,8 @@ const projects = [
     title: 'Prod+ Collaborators',
     image: '',
     description: 'Site responsive com cards de todos o colaboradores do projeto Prod+ 2022, feito por uma equipe da turma de Análise e desenvolvimento de sistemas.',
-    colorClass: '',
-    tecnology: ''
+    colorClass: 'purple',
+    tecnology: 'CSS'
   },
 
   {
@@ -26,8 +26,8 @@ const projects = [
     title: 'beatysalon',
     image: '',
     description: 'Site de salão de beleza, responsivo e com um design agradável para pessoas interessadas em saber mais do serviço oferecido pelo salão.',
-    colorClass: '',
-    tecnology: ''
+    colorClass: 'orange',
+    tecnology: 'HTML'
   },
 
   {
@@ -35,8 +35,8 @@ const projects = [
     title: 'API BShelf',
     image: '',
     description: 'API Restful completa com CRUD completo para cadastro de livros, utilizando Node.js, MongoDB e Postman para teste de requesição e resposta.',
-    colorClass: '',
-    tecnology: ''
+    colorClass: 'blue',
+    tecnology: 'Typescript'
   },
 
   {
@@ -44,8 +44,8 @@ const projects = [
     title: 'nlw-card',
     image: '',
     description: 'Cartão de apresentação online e responsivo que utiliza a API de usuário do Github para conseguir informações como o nome, foto de perfil, redes sociais e o username do próprio Github.',
-    colorClass: '',
-    tecnology: ''
+    colorClass: 'orange',
+    tecnology: 'HTML'
   },
 
   {
@@ -53,8 +53,8 @@ const projects = [
     title: 'CMLife',
     image: '',
     description: 'Site responsivo de um consultório que atende pesssoas para diferentes serviços de saúde.',
-    colorClass: '',
-    tecnology: ''
+    colorClass: 'orange',
+    tecnology: 'HTML'
   },
 
   {
@@ -62,8 +62,8 @@ const projects = [
     title: 'Ecoleta',
     image: '',
     description: '',
-    colorClass: '',
-    tecnology: ''
+    colorClass: 'blue',
+    tecnology: 'Typescript',
   },
 
   {
@@ -71,17 +71,17 @@ const projects = [
     title: 'widget-feedback',
     image: '',
     description: '',
-    colorClass: '',
-    tecnology: ''
+    colorClass: 'blue',
+    tecnology: 'Typescript',
   },
 
   {
-    url: 'https://github.com/yLuiz/todo-react',
+    url: 'https://github.com/yLuiz/todo-react-ts',
     title: 'todo-react',
     image: '',
     description: 'Uma To-Do List simples programada usando React.js e JSON Server para simular um banco de dados local e não relacional, é meu primeiro projeto feito com React.js.',
-    colorClass: '',
-    tecnology: ''
+    colorClass: 'blue',
+    tecnology: 'Typescript',
   },
 ];
 
