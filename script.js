@@ -31,7 +31,7 @@ const projects = [
   },
 
   {
-    url: 'https://yluiz.github.io/nlw_card/',
+    url: 'https://yluiz.github.io/nlw-card/',
     title: 'nlw-card',
     image: '',
     description: 'Cartão de apresentação online e responsivo que utiliza a API de usuário do Github para conseguir informações como o nome, foto de perfil, redes sociais e o username do próprio Github.',
