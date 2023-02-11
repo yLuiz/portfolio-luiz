@@ -22,6 +22,42 @@ const projects = [
   },
 
   {
+    url: 'https://yluiz.github.io/CMLife/',
+    title: 'CMLife',
+    image: '',
+    description: 'Site responsivo de um consultório que atende pesssoas para diferentes serviços de saúde. Este site foi feito com HTML, CSS e JavaScript.',
+    colorClass: 'orange',
+    tecnology: 'HTML'
+  },
+
+  {
+    url: 'https://yluiz.github.io/nlw_card/',
+    title: 'nlw-card',
+    image: '',
+    description: 'Cartão de apresentação online e responsivo que utiliza a API de usuário do Github para conseguir informações como o nome, foto de perfil, redes sociais e o username do próprio Github.',
+    colorClass: 'orange',
+    tecnology: 'HTML'
+  },
+
+  {
+    url: 'https://github.com/yLuiz/feedback-meals',
+    title: 'feedback-meals',
+    image: '',
+    description: 'Permite o usuário a votar sobre o que achou da refeição. Mostrando os votos em um gráfico via WebSocket. O sistema ainda está em desenvolvimento em desenvolvimento porém você pode ver o visual inicial no repositório. Foi utilizado Angular 13+, Nestjs, Typescript, Prisma, Socket.io, Docker, Sass e MySQL para o desenvolvimento do sistema.',
+    colorClass: 'blue',
+    tecnology: 'Typescript'
+  },
+
+  {
+    url: 'https://widget-feedback-six.vercel.app',
+    title: 'widget-feedback',
+    image: '',
+    description: 'Pode ser considerado uma feature muito útil para sistemas maiores, pois o objetivo dela é coletar problemas(bugs), ideias ou alguma outra situção dentro de um aplicativo. Foi utilizado React, React Native, Typescript, Express e Prisma, com deploy feito na vercel (Frontend) e Railway (Backend).',
+    colorClass: 'blue',
+    tecnology: 'Typescript',
+  },
+
+  {
     url: 'https://github.com/yLuiz/bshelf-angular',
     title: 'bshelf-angular',
     image: '',
@@ -40,37 +76,10 @@ const projects = [
   },
 
   {
-    url: 'https://yluiz.github.io/nlw_card/',
-    title: 'nlw-card',
-    image: '',
-    description: 'Cartão de apresentação online e responsivo que utiliza a API de usuário do Github para conseguir informações como o nome, foto de perfil, redes sociais e o username do próprio Github.',
-    colorClass: 'orange',
-    tecnology: 'HTML'
-  },
-
-  {
-    url: 'https://yluiz.github.io/CMLife/',
-    title: 'CMLife',
-    image: '',
-    description: 'Site responsivo de um consultório que atende pesssoas para diferentes serviços de saúde. Este site foi feito com HTML, CSS e JavaScript.',
-    colorClass: 'orange',
-    tecnology: 'HTML'
-  },
-
-  {
     url: 'https://github.com/yLuiz/ecoleta',
     title: 'ecoleta',
     image: '',
     description: 'Um sistema feito para que lojas possam se cadastrar como pontos de coleta e que usuários possam saber onde encontrar esses pontos via mapa. Tecnologias usudas: React, React Native, Typescript, Express, Prisma.',
-    colorClass: 'blue',
-    tecnology: 'Typescript',
-  },
-
-  {
-    url: 'https://widget-feedback-six.vercel.app',
-    title: 'widget-feedback',
-    image: '',
-    description: 'Pode ser considerado uma feature muito útil para sistemas maiores, pois o objetivo dela é coletar problemas(bugs), ideias ou alguma outra situção dentro de um aplicativo. Foi utilizado React, React Native, Typescript, Express e Prisma, com deploy feito na vercel (Frontend) e Railway (Backend).',
     colorClass: 'blue',
     tecnology: 'Typescript',
   },
@@ -135,6 +144,10 @@ const technologys = [
   },
   {
     name: 'NESTJS',
+    image: './assets/technologys/nestjs.png',
+  },
+  {
+    name: 'WebSocket',
     image: './assets/technologys/nestjs.png',
   },
   {
