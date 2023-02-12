@@ -147,8 +147,8 @@ const technologys = [
     image: './assets/technologys/nestjs.png',
   },
   {
-    name: 'WebSocket',
-    image: './assets/technologys/nestjs.png',
+    name: 'WEBSOCKET',
+    image: './assets/technologys/websocket.svg',
   },
   {
     name: 'MYSQL',
